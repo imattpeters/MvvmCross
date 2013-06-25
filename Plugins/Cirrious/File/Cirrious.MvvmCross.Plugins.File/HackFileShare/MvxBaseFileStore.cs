@@ -48,7 +48,11 @@ namespace Cirrious.MvvmCross.Plugins.File
         public IEnumerable<string> GetFilesIn(string folderPath)
         {
             var fullPath = FullPath(folderPath);
+#if SILVERLIGHT
+			return Directory.EnumerateFiles( fullPath);
+#else
             return Directory.GetFiles(fullPath);
+#endif
         }
 
         public void DeleteFile(string filePath)
