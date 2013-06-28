@@ -8,7 +8,7 @@
 using System;
 using System.IO;
 
-namespace Cirrious.MvvmCross.Plugins.File.Wpf
+namespace Cirrious.MvvmCross.Plugins.File.SilverLight
 {
     public class MvxSilverLightFileStore : MvxFileStore
     {
