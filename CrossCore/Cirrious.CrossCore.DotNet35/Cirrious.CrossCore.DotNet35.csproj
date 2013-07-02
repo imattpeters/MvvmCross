@@ -168,16 +168,16 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.INotifyCollectionChanged.cs">
+    <Compile Include="..\..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.INotifyCollectionChanged.cs">
       <Link>System.Collections.Specialized.INotifyCollectionChanged.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.NotifyCollectionChangedAction.cs">
+    <Compile Include="..\..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.NotifyCollectionChangedAction.cs">
       <Link>System.Collections.Specialized.NotifyCollectionChangedAction.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.NotifyCollectionChangedEventArgs .cs">
+    <Compile Include="..\..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.NotifyCollectionChangedEventArgs .cs">
       <Link>System.Collections.Specialized.NotifyCollectionChangedEventArgs .cs</Link>
     </Compile>
-    <Compile Include="..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.NotifyCollectionChangedEventHandler.cs">
+    <Compile Include="..\..\..\..\Sys\Shared\MissingFromBLC\System.Collections.Specialized.NotifyCollectionChangedEventHandler.cs">
       <Link>System.Collections.Specialized.NotifyCollectionChangedEventHandler.cs</Link>
     </Compile>
     <Compile Include="..\Cirrious.CrossCore\*.cs">
