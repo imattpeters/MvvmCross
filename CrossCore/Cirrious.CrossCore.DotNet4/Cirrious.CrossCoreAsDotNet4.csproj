@@ -13,8 +13,7 @@
     <SignAssembly>true</SignAssembly>
     <ApplicationIcon>
     </ApplicationIcon>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>bfdc.pfx</AssemblyOriginatorKeyFile>
     <NoStdLib>False</NoStdLib>
     <BaseAddress>4194304</BaseAddress>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -205,7 +204,9 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.XML" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="bfdc.pfx" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <PropertyGroup>
     <PostBuildEvent>
