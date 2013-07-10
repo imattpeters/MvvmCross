@@ -195,9 +195,6 @@ namespace Cirrious.MvvmCross.Dialog.Droid
 			// aapt resource value: 0x7f030015
 			public static int dialog_textfieldright = 2130903061;
 			
-			// aapt resource value: 0x7f030016
-			public static int monoandroidsplash = 2130903062;
-			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
