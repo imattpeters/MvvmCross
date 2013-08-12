@@ -19,14 +19,18 @@ namespace Cirrious.MvvmCross.SilverLight.Views {
 				DataContext = value;
 			}
 		}
+
+		public MvxSilverLightView() : base() { }
 	}
 
-	public class MvxSilverLightView<T> : MvxSilverLightView where T : IMvxViewModel {
-		private T _viewModel;
+	public class MvxSilverLightView<T> : MvxSilverLightView
+		where T : class, IMvxViewModel {
+
+		public MvxSilverLightView() : base() { }
 
 		public new T ViewModel {
-			get { return _viewModel; }
-			set { _viewModel = value; DataContext = value; }
+			get { return base.ViewModel as T; }
+			set { base.ViewModel = value; }
 		}
 	}
 
