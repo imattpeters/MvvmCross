@@ -8,20 +8,26 @@
 using System.Windows.Controls;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public class MvxSilverLightView : UserControl, IMvxSilverLightView
-    {
-        private IMvxViewModel _viewModel;
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public class MvxSilverLightView : UserControl, IMvxSilverLightView {
+		private IMvxViewModel _viewModel;
 
-        public IMvxViewModel ViewModel
-        {
-            get { return _viewModel; }
-            set
-            {
-                _viewModel = value;
-                DataContext = value;
-            }
-        }
-    }
+		public virtual IMvxViewModel ViewModel {
+			get { return _viewModel; }
+			set {
+				_viewModel = value;
+				DataContext = value;
+			}
+		}
+	}
+
+	public class MvxSilverLightView<T> : MvxSilverLightView where T : IMvxViewModel {
+		private T _viewModel;
+
+		public new T ViewModel {
+			get { return _viewModel; }
+			set { _viewModel = value; DataContext = value; }
+		}
+	}
+
 }
