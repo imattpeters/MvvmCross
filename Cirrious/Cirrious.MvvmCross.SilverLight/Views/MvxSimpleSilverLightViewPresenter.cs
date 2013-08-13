@@ -10,21 +10,17 @@ using System.Windows.Controls;
 using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public class MvxSimpleSilverLightViewPresenter
-        : MvxSilverLightViewPresenter
-    {
-        private readonly ContentControl _contentControl;
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public class MvxSimpleSilverLightViewPresenter
+		: MvxSilverLightViewPresenter {
+		private readonly ContentControl _contentControl;
 
-        public MvxSimpleSilverLightViewPresenter(ContentControl contentControl)
-        {
-            _contentControl = contentControl;
-        }
+		public MvxSimpleSilverLightViewPresenter( ContentControl contentControl ) {
+			_contentControl = contentControl;
+		}
 
-        public override void Present(FrameworkElement frameworkElement)
-        {
-            _contentControl.Content = frameworkElement;
-        }
-    }
+		public override void Present( FrameworkElement frameworkElement ) {
+			_contentControl.Content = frameworkElement;
+		}
+	}
 }

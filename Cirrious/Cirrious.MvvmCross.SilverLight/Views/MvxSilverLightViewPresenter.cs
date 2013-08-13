@@ -12,31 +12,26 @@ using Cirrious.CrossCore;
 using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public abstract class MvxSilverLightViewPresenter
-        : IMvxSilverLightViewPresenter
-    {
-        public void Show(MvxViewModelRequest request)
-        {
-            try
-            {
-                var loader = Mvx.Resolve<IMvxSimpleSilverLightViewLoader>();
-                var view = loader.CreateView(request);
-                Present(view);
-            }
-            catch (Exception exception)
-            {
-                MvxTrace.Error("Error seen during navigation request to {0} - error {1}", request.ViewModelType.Name,
-                               exception.ToLongString());
-            }
-        }
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public abstract class MvxSilverLightViewPresenter
+		: IMvxSilverLightViewPresenter {
 
-        public abstract void Present(FrameworkElement frameworkElement);
+		public void Show( MvxViewModelRequest request ) {
+			try {
+				var loader = Mvx.Resolve<IMvxSimpleSilverLightViewLoader>();
+				var view = loader.CreateView( request );
+				Present( view );
+			} catch ( Exception exception ) {
+				MvxTrace.Error( "Error seen during navigation request to {0} - error {1}", request.ViewModelType.Name,
+							   exception.ToLongString() );
+			}
+		}
 
-        public virtual void ChangePresentation(MvxPresentationHint hint)
-        {
-            MvxTrace.Warning("Hint ignored {0}", hint.GetType().Name);
-        }
-    }
+		public abstract void Present( FrameworkElement frameworkElement );
+
+		public virtual void ChangePresentation( MvxPresentationHint hint ) {
+			MvxTrace.Warning( "Hint ignored {0}", hint.GetType().Name );
+		}
+
+	}
 }
