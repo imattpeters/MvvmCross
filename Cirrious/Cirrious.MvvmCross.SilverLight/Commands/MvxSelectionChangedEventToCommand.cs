@@ -7,21 +7,17 @@
 
 using System.Windows.Controls;
 
-namespace Cirrious.MvvmCross.SilverLight.Commands
-{
-    public class MvxSelectionChangedEventToCommand : MvxWithArgsEventToCommand
-    {
-        protected override object MapCommandParameter(object parameter)
-        {
-            var selectionChangedEventArgs = parameter as SelectionChangedEventArgs;
-            if (selectionChangedEventArgs == null)
-                return parameter;
+namespace Cirrious.MvvmCross.SilverLight.Commands {
+	public class MvxSelectionChangedEventToCommand : MvxWithArgsEventToCommand {
+		protected override object MapCommandParameter( object parameter ) {
+			var selectionChangedEventArgs = parameter as SelectionChangedEventArgs;
+			if ( selectionChangedEventArgs == null )
+				return parameter;
 
-            return new MvxSimpleSelectionChangedEventArgs
-                {
-                    AddedItems = selectionChangedEventArgs.AddedItems,
-                    RemovedItems = selectionChangedEventArgs.RemovedItems
-                };
-        }
-    }
+			return new MvxSimpleSelectionChangedEventArgs {
+				AddedItems = selectionChangedEventArgs.AddedItems,
+				RemovedItems = selectionChangedEventArgs.RemovedItems
+			};
+		}
+	}
 }

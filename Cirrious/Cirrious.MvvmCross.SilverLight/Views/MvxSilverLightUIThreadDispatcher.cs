@@ -9,35 +9,28 @@ using System;
 using System.Windows.Threading;
 using Cirrious.CrossCore.Core;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public class MvxSilverLightUIThreadDispatcher
-        : MvxMainThreadDispatcher
-    {
-        private readonly Dispatcher _dispatcher;
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public class MvxSilverLightUIThreadDispatcher
+		: MvxMainThreadDispatcher {
+		private readonly Dispatcher _dispatcher;
 
-        public MvxSilverLightUIThreadDispatcher(Dispatcher dispatcher)
-        {
-            _dispatcher = dispatcher;
-        }
+		public MvxSilverLightUIThreadDispatcher( Dispatcher dispatcher ) {
+			_dispatcher = dispatcher;
+		}
 
-        public bool RequestMainThreadAction(Action action)
-        {
-            if (_dispatcher.CheckAccess())
-            {
-                action();
-            }
-            else
-            {
+		public bool RequestMainThreadAction( Action action ) {
+			if ( _dispatcher.CheckAccess() ) {
+				action();
+			} else {
 #if SILVERLIGHT
 				_dispatcher.BeginInvoke( () => ExceptionMaskedAction( action ) );
 #else
                 _dispatcher.Invoke(() => ExceptionMaskedAction(action));
 #endif
-            }
+			}
 
-            // TODO - why return bool at all?
-            return true;
-        }
-    }
+			// TODO - why return bool at all?
+			return true;
+		}
+	}
 }

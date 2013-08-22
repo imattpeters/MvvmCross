@@ -8,15 +8,12 @@
 using System;
 using System.IO;
 
-namespace Cirrious.MvvmCross.Plugins.File.SilverLight
-{
-    public class MvxSilverLightFileStore : MvxFileStore
-    {
-        protected override string FullPath(string path)
-        {
-            return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), path);
-        }
-    }
+namespace Cirrious.MvvmCross.Plugins.File.SilverLight {
+	public class MvxSilverLightFileStore : MvxFileStore {
+		protected override string FullPath( string path ) {
+			return Path.Combine( Environment.GetFolderPath( Environment.SpecialFolder.ApplicationData ), path );
+		}
+	}
 }
 
 // TODO - credits needed!

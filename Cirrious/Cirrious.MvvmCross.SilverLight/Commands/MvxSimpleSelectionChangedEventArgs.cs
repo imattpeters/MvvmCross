@@ -8,11 +8,9 @@
 using System;
 using System.Collections;
 
-namespace Cirrious.MvvmCross.SilverLight.Commands
-{
-    public class MvxSimpleSelectionChangedEventArgs : EventArgs
-    {
-        public IList AddedItems { get; set; }
-        public IList RemovedItems { get; set; }
-    }
+namespace Cirrious.MvvmCross.SilverLight.Commands {
+	public class MvxSimpleSelectionChangedEventArgs : EventArgs {
+		public IList AddedItems { get; set; }
+		public IList RemovedItems { get; set; }
+	}
 }

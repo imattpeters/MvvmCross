@@ -8,10 +8,8 @@
 using System.Windows;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public interface IMvxSimpleSilverLightViewLoader
-    {
-        FrameworkElement CreateView(MvxViewModelRequest request);
-    }
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public interface IMvxSimpleSilverLightViewLoader {
+		FrameworkElement CreateView( MvxViewModelRequest request );
+	}
 }

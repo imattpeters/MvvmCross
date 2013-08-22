@@ -8,12 +8,9 @@
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Views;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public interface IMvxSilverLightView
-        : IMvxView
-
-    {
-        IMvxViewModel ViewModel { get; set; }
-    }
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public interface IMvxSilverLightView
+		: IMvxView {
+		IMvxViewModel ViewModel { get; set; }
+	}
 }

@@ -5,13 +5,10 @@
 // 
 // Project Lead - Stuart Lodge, @slodge, me@slodge.com
 
-namespace Cirrious.MvvmCross.SilverLight.Commands
-{
-    public class MvxWithArgsEventToCommand : MvxEventToCommand
-    {
-        public MvxWithArgsEventToCommand()
-        {
-            PassEventArgsToCommand = true;
-        }
-    }
+namespace Cirrious.MvvmCross.SilverLight.Commands {
+	public class MvxWithArgsEventToCommand : MvxEventToCommand {
+		public MvxWithArgsEventToCommand() {
+			PassEventArgsToCommand = true;
+		}
+	}
 }

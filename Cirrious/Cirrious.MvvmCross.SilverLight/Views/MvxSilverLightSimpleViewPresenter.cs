@@ -7,21 +7,17 @@
 
 using System.Windows;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public class MvxSilverLightSimpleViewPresenter
-        : MvxSilverLightViewPresenter
-    {
-        private readonly Window _mainWindow;
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public class MvxSilverLightSimpleViewPresenter
+		: MvxSilverLightViewPresenter {
+		private readonly Window _mainWindow;
 
-        public MvxSilverLightSimpleViewPresenter(Window mainWindow)
-        {
-            _mainWindow = mainWindow;
-        }
+		public MvxSilverLightSimpleViewPresenter( Window mainWindow ) {
+			_mainWindow = mainWindow;
+		}
 
-        public override void Present(FrameworkElement frameworkElement)
-        {
-            _mainWindow.Content = frameworkElement;
-        }  
-    }
+		public override void Present( FrameworkElement frameworkElement ) {
+			_mainWindow.Content = frameworkElement;
+		}
+	}
 }

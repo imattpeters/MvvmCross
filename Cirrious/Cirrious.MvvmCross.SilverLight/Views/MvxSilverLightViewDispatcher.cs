@@ -10,28 +10,23 @@ using System.Windows.Threading;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Views;
 
-namespace Cirrious.MvvmCross.SilverLight.Views
-{
-    public class MvxSilverLightViewDispatcher
-        : MvxSilverLightUIThreadDispatcher
-          , IMvxViewDispatcher
-    {
-        private readonly IMvxSilverLightViewPresenter _presenter;
+namespace Cirrious.MvvmCross.SilverLight.Views {
+	public class MvxSilverLightViewDispatcher
+		: MvxSilverLightUIThreadDispatcher
+		  , IMvxViewDispatcher {
+		private readonly IMvxSilverLightViewPresenter _presenter;
 
-        public MvxSilverLightViewDispatcher(Dispatcher dispatcher, IMvxSilverLightViewPresenter presenter)
-            : base(dispatcher)
-        {
-            _presenter = presenter;
-        }
+		public MvxSilverLightViewDispatcher( Dispatcher dispatcher, IMvxSilverLightViewPresenter presenter )
+			: base( dispatcher ) {
+			_presenter = presenter;
+		}
 
-        public bool ShowViewModel(MvxViewModelRequest request)
-        {
-            return RequestMainThreadAction(() => _presenter.Show(request));
-        }
+		public bool ShowViewModel( MvxViewModelRequest request ) {
+			return RequestMainThreadAction( () => _presenter.Show( request ) );
+		}
 
-        public bool ChangePresentation(MvxPresentationHint hint)
-        {
-            return RequestMainThreadAction(() => _presenter.ChangePresentation(hint));
-        }
-    }
+		public bool ChangePresentation( MvxPresentationHint hint ) {
+			return RequestMainThreadAction( () => _presenter.ChangePresentation( hint ) );
+		}
+	}
 }

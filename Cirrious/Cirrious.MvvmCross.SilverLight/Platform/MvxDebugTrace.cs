@@ -9,23 +9,18 @@ using System;
 using System.Diagnostics;
 using Cirrious.CrossCore.Platform;
 
-namespace Cirrious.MvvmCross.SilverLight.Platform
-{
-    public class MvxDebugTrace : IMvxTrace
-    {
-        public void Trace(MvxTraceLevel level, string tag, Func<string> message)
-        {
-            Debug.WriteLine(tag + ":" + level + ":" + message());
-        }
+namespace Cirrious.MvvmCross.SilverLight.Platform {
+	public class MvxDebugTrace : IMvxTrace {
+		public void Trace( MvxTraceLevel level, string tag, Func<string> message ) {
+			Debug.WriteLine( tag + ":" + level + ":" + message() );
+		}
 
-        public void Trace(MvxTraceLevel level, string tag, string message)
-        {
-            Debug.WriteLine(tag + ": " + level + ": " + message);
-        }
+		public void Trace( MvxTraceLevel level, string tag, string message ) {
+			Debug.WriteLine( tag + ": " + level + ": " + message );
+		}
 
-        public void Trace(MvxTraceLevel level, string tag, string message, params object[] args)
-        {
-            Debug.WriteLine(tag + ": " + level + ": " + message, args);
-        }
-    }
+		public void Trace( MvxTraceLevel level, string tag, string message, params object[] args ) {
+			Debug.WriteLine( tag + ": " + level + ": " + message, args );
+		}
+	}
 }

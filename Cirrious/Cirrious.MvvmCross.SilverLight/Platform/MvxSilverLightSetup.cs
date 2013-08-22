@@ -11,8 +11,8 @@ using Cirrious.CrossCore;
 using Cirrious.CrossCore.Platform;
 using Cirrious.CrossCore.Plugins;
 using Cirrious.MvvmCross.Platform;
-using Cirrious.MvvmCross.Views;
 using Cirrious.MvvmCross.SilverLight.Views;
+using Cirrious.MvvmCross.Views;
 
 namespace Cirrious.MvvmCross.SilverLight.Platform {
 	public abstract class MvxSilverLightSetup : MvxSetup {
