@@ -1,0 +1,397 @@
+﻿Merge branch 'v3' of https://github.com/slodge/MvvmCross into v3
+
+Conflicts:
+	Cirrious/Cirrious.MvvmCross.Dialog.Droid/Resources/Resource.Designer.cs
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch v3
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   Cirrious/Cirrious.MvvmCross.AutoView.Droid/ExtensionMethods/HackMvxMenuExtensionMethods.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.AutoView.Touch/Views/Lists/GeneralListItemViewFactory.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.AutoView.Touch/Views/Lists/GeneralTableViewCell.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.AutoView/Auto/Dialog/EntryAuto.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.AutoView/Auto/ExpressionExtensions.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.AutoView/Cirrious.MvvmCross.AutoView.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/BindingContext/MvxAndroidBindingContext.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Cirrious.MvvmCross.Binding.Droid.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/MvxAndroidBindingBuilder.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding.Droid/MvxViewAssemblyBootstrapAction.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Target/MvxSpinnerSelectedItemBinding.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Target/MvxViewVisibleBinding.cs
+#	deleted:    Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxDateChangedListener.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxDatePicker.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxFrameControl.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxFrameLayout.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxGridView.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxLinearLayout.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxListView.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxRelativeLayout.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxTableLayout.cs
+#	deleted:    Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxTimeChangedListener.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/MvxTimePicker.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Cirrious.MvvmCross.Binding.Touch.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/MvxTouchBindingBuilder.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Binding.Touch/Target/MvxUIDatePickerDateTargetBinding.cs -> Cirrious/Cirrious.MvvmCross.Binding.Touch/Target/MvxBaseUIDatePickerTargetBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Target/MvxUIDatePickerDateTargetBinding.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Target/MvxUIDatePickerTimeTargetBinding.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Target/MvxUISearchBarTextTargetBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Target/MvxUIViewTapTargetBinding.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Target/MvxUIViewVisibleTargetBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxActionBasedTableViewSource.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxBaseTableViewSource.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxCollectionViewCell.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxPickerViewModel.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxStandardTableViewCell.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxStandardTableViewSource.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxTableViewCell.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding.Touch/Views/MvxView.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/IMvxAutoValueConverters.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/IMvxBindingDescriptionParser.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/IMvxValueConverterLookup.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/IMvxValueConverterRegistryFiller.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxAutoValueConverters.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxFromTextBinder.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxValueConverterRegistry.cs -> Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxNamedInstanceRegistry.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxValueConverterRegistryFiller.cs -> Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxNamedInstanceRegistryFiller.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxRegistryFillerExtensions.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxValueConverterRegistry.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxValueConverterRegistryFiller.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/IMvxBindingContext.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxBaseFluentBindingDescription.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxBindExtensions.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxBindingContext.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxBindingContextOwnerExtensions.Fluent.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxBindingContextOwnerExtensions.Language.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxBindingContextOwnerExtensions.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxBindingNameRegistry.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxFluentBindingDescription.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/BindingContext/MvxFluentBindingDescriptionSet.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxBindingDescription.cs -> Cirrious/Cirrious.MvvmCross.Binding/Bindings/MvxBindingDescription.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/MvxFullBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Chained/MvxChainedSourceBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Chained/MvxIndexerChainedSourceBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Chained/MvxSimpleChainedSourceBinding.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Construction/IMvxSourceBindingFactoryExtension.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Construction/IMvxSourceBindingFactoryExtensionHost.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Construction/MvxPropertySourceBindingFactoryExtension.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Construction/MvxSourceBindingFactory.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Leaf/MvxIndexerLeafPropertyInfoSourceBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Leaf/MvxLeafPropertyInfoSourceBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/Leaf/MvxSimpleLeafPropertyInfoSourceBinding.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/MvxMissingSourceBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/MvxPropertyInfoSourceBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Source/MvxSourceBinding.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/IMvxSourceStep.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/IMvxTimeListenerTarget.cs -> Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/IMvxSourceStepFactory.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/IMvxSourceStepFactoryRegistry.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxCombinerSourceStep.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxCombinerSourceStepDescription.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxCombinerSourceStepFactory.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxLiteralSourceStep.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxLiteralSourceStepDescription.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxLiteralSourceStepFactory.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxPathSourceStep.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxPathSourceStepDescription.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxPathSourceStepFactory.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxSourceStep.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxSourceStepDescription.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxSourceStepFactory.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/SourceSteps/MvxTypedSourceStepFactory.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Target/Construction/MvxTargetBindingFactoryRegistry.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Target/MvxEventHandlerEventInfoTargetBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Bindings/Target/MvxPropertyInfoTargetBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Cirrious.MvvmCross.Binding.csproj
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/IMvxValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/IMvxValueCombinerLookup.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/IMvxValueCombinerRegistry.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/IMvxValueCombinerRegistryFiller.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxAddValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxDivideValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxFormatValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxIfValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxModulusValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxMultiplyValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxNumericOnlyValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxObjectAsStringPairwiseValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxPairwiseValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxSingleValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxSubtractValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxValueCombinerRegistry.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxValueCombinerRegistryFiller.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/MvxValueConverterValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/VeryExperimental/MvxBooleanValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/VeryExperimental/MvxEqualToValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/VeryExperimental/MvxGreaterThanOrEqualToValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/VeryExperimental/MvxGreaterThanValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/VeryExperimental/MvxLessThanOrEqualToValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/VeryExperimental/MvxLessThanValueCombiner.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Combiners/VeryExperimental/MvxNotEqualToPairwiseValueCombiner.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/ExtensionMethods/MvxEnumerableExtensions.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/ExtensionMethods/MvxTypeExtensions.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/IMvxBindingSingletonCache.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/MvxBindingBuilder.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/MvxBindingRequest.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/MvxBindingSingletonCache.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/MvxBindingTrace.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/MvxCoreBindingBuilder.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Parse/Binding/Lang/MvxLanguageBindingParser.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Parse/Binding/MvxBindingDescriptionParser.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Parse/Binding/MvxSerializableBindingDescription.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Parse/Binding/Swiss/MvxSwissBindingParser.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Binding/Parse/Binding/Tibet/MvxTibetBindingParser.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Parse/PropertyPath/PropertyTokens/MvxEmptyPropertyToken.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Parse/PropertyPath/PropertyTokens/MvxIndexerPropertyToken.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Parse/PropertyPath/PropertyTokens/MvxPropertyNamePropertyToken.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/ValueConverters/MvxCommandParameterValueConverter.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/ValueConverters/MvxWrappingCommand.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Binding/Views/MvxBaseImageViewLoader.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/Bi.n.d.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/Cirrious.MvvmCross.BindingEx.WindowsPhone.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/IMvxBindingCreator.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/IMvxWindowsAssemblyCache.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/Import.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/La.n.g.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxBinding/MvxMvvmCrossBindingCreator.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxBinding/Target/MvxDependencyPropertyTargetBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxBinding/Target/MvxVisibleTargetBinding.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxBindingCreator.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxDependencyPropertyExtensionMethods.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxDesignTimeChecker.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxWindowsAssemblyCache.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/MvxWindowsBindingBuilder.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsPhone/WindowsBinding/MvxWindowsBindingCreator.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.BindingEx.WindowsStore/Cirrious.MvvmCross.BindingEx.WindowsStore.csproj
+#	new file:   Cirrious/Cirrious.MvvmCross.BindingEx.Wpf/Cirrious.MvvmCross.BindingEx.Wpf.csproj
+#	new file:   Cirrious/Cirrious.MvvmCross.BindingEx.Wpf/Properties/AssemblyInfo.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Console/Cirrious.MvvmCross.Console.csproj
+#	deleted:    Cirrious/Cirrious.MvvmCross.Console/Platform/MvxConsolePluginManager.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Console/Platform/MvxConsoleSetup.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Dialog.Droid/Cirrious.MvvmCross.Dialog.Droid.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross.Dialog.Droid/Resources/Resource.Designer.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Dialog.Droid/Views/EventSourceLinearDialogActivity.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Dialog.Droid/Views/MvxLinearDialogActivity.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Dialog.Touch/MvxDialogViewController.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Droid/Cirrious.MvvmCross.Droid.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross.Droid/Platform/MvxAndroidSetup.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Droid/Platform/MvxDebugTrace.cs
+#	new file:   Cirrious/Cirrious.MvvmCross.Droid/Views/IMvxAndroidViewsContainer.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Droid/Views/MvxActivityViewExtensions.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Droid/Views/MvxAndroidViewPresenter.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Droid/Views/MvxAndroidViewsContainer.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Droid/Views/MvxSplashScreenActivity.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Localisation/Cirrious.MvvmCross.Localization.csproj -> Cirrious/Cirrious.MvvmCross.Localization/Cirrious.MvvmCross.Localization.csproj
+#	renamed:    Cirrious/Cirrious.MvvmCross.Localisation/IMvxLanguageBinder.cs -> Cirrious/Cirrious.MvvmCross.Localization/IMvxLanguageBinder.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Localisation/IMvxTextProvider.cs -> Cirrious/Cirrious.MvvmCross.Localization/IMvxTextProvider.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Localisation/MvxLanguageBinder.cs -> Cirrious/Cirrious.MvvmCross.Localization/MvxLanguageBinder.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Localisation/MvxLanguageConverter.cs -> Cirrious/Cirrious.MvvmCross.Localization/MvxLanguageConverter.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Localisation/Properties/AssemblyInfo.cs -> Cirrious/Cirrious.MvvmCross.Localization/Properties/AssemblyInfo.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Touch/Cirrious.MvvmCross.Touch.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross.WindowsPhone/Views/IMvxPhoneViewPresenter.cs
+#	modified:   Cirrious/Cirrious.MvvmCross.Wpf/Views/MvxWpfSimpleViewPresenter.cs
+#	modified:   Cirrious/Cirrious.MvvmCross/Cirrious.MvvmCross.csproj
+#	modified:   Cirrious/Cirrious.MvvmCross/Platform/MvxSetup.cs
+#	modified:   Cirrious/Cirrious.MvvmCross/Platform/MvxStringToTypeParser.cs
+#	new file:   Cirrious/Cirrious.MvvmCross/ViewModels/IMvxViewModelByNameRegistry.cs
+#	modified:   Cirrious/Cirrious.MvvmCross/ViewModels/MvxNotifyPropertyChanged.cs
+#	modified:   Cirrious/Cirrious.MvvmCross/ViewModels/MvxViewModelByNameLookup.cs
+#	modified:   Cirrious/Cirrious.MvvmCross/ViewModels/MvxViewModelLoader.cs
+#	new file:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Binders/MvxSourceStepTests.cs
+#	renamed:    Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Bindings/MvxFullBindingTest.cs -> Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Bindings/MvxFullBindingConstructionTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Bindings/MvxFullBindingTest.cs
+#	new file:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Bindings/MvxFullBindingValueConversionTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Cirrious.MvvmCross.Binding.Test.csproj
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/ExpressionParse/MvxExpressionBindingTest.cs
+#	new file:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/ExtensionMethods/MakeSafeValueTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Parse/Binding/MvxBindingTest.cs
+#	renamed:    Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Parse/Binding/Swiss/MvxSwissBindingTest.cs -> Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Parse/Binding/Swiss/MvxBaseSwissBindingTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Binding.Test/Parse/Binding/Swiss/MvxSwissBindingTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Test/Parse/MvxStringDictionaryTextSerializerTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Test/Platform/MvxViewModelByNameLookupTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Test/Platform/MvxViewModelViewLookupBuilderTest.cs
+#	modified:   Cirrious/Test/Cirrious.MvvmCross.Test/Platform/MvxViewModelViewTypeFinderTest.cs
+#	modified:   CrossCore/Cirrious.CrossCore.WindowsPhone/Cirrious.CrossCore.WindowsPhone.csproj
+#	new file:   CrossCore/Cirrious.CrossCore.WindowsPhone/Platform/MvxDesignTimeHelper.cs
+#	modified:   CrossCore/Cirrious.CrossCore.WindowsStore/Cirrious.CrossCore.WindowsStore.csproj
+#	new file:   CrossCore/Cirrious.CrossCore.WindowsStore/Platform/MvxDesignTimeHelper.cs
+#	new file:   CrossCore/Cirrious.CrossCore.Wpf/Cirrious.CrossCore.Wpf.csproj
+#	new file:   CrossCore/Cirrious.CrossCore.Wpf/Converters/MvxNativeValueConverter.cs
+#	new file:   CrossCore/Cirrious.CrossCore.Wpf/Platform/MvxDesignTimeHelper.cs
+#	new file:   CrossCore/Cirrious.CrossCore.Wpf/Properties/AssemblyInfo.cs
+#	modified:   CrossCore/Cirrious.CrossCore/Cirrious.CrossCore.csproj
+#	modified:   CrossCore/Cirrious.CrossCore/Converters/IMvxValueConverterRegistry.cs
+#	modified:   CrossCore/Cirrious.CrossCore/Core/IMvxDataConsumer.cs
+#	modified:   CrossCore/Cirrious.CrossCore/Core/MvxPropertyNameExtensionMethods.cs
+#	modified:   CrossCore/Cirrious.CrossCore/Core/MvxSingleton.cs
+#	modified:   CrossCore/Cirrious.CrossCore/IoC/MvxSimpleIoCContainer.cs
+#	modified:   CrossCore/Cirrious.CrossCore/IoC/MvxTypeExtensions.cs
+#	modified:   CrossCore/Cirrious.CrossCore/Parse/MvxParser.cs
+#	new file:   CrossCore/Cirrious.CrossCore/Platform/IMvxNamedInstanceRegistry.cs
+#	modified:   CrossCore/Cirrious.CrossCore/WeakSubscription/MvxNamedNotifyPropertyChangedEventSubscription.cs
+#	modified:   CrossCore/Cirrious.CrossCore/WeakSubscription/MvxWeakSubscriptionExtensionMethods.cs
+#	modified:   CrossCore/Test/Cirrious.CrossCore.Test/Cirrious.CrossCore.Test.csproj
+#	new file:   CrossCore/Test/Cirrious.CrossCore.Test/MvxPropertyParsingExpressionTest.cs
+#	modified:   CrossUI/CrossUI.Core/Builder/KeyedUserInterfaceBuilder.cs
+#	modified:   CrossUI/CrossUI.Core/Builder/PropertyBuilder.cs
+#	modified:   CrossUI/CrossUI.Core/CrossUI.Core.csproj
+#	modified:   CrossUI/CrossUI.Droid/CrossUI.Droid.csproj
+#	new file:   CrossUI/CrossUI.Droid/Dialog/CustomDataSetObserver.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/DialogActivity.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/DialogAdapter.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/DialogListView.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/BooleanElement.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/DateTimeElement.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/Element.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/EntryElement.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/FloatElement.cs
+#	renamed:    Cirrious/Cirrious.MvvmCross.Binding.Droid/Views/IMvxDateListenerTarget.cs -> CrossUI/CrossUI.Droid/Dialog/Elements/IRadioElement.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/RadioElement.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/RootElement.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Elements/Section.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Enums/AndroidDialogEnumHelper.cs
+#	modified:   CrossUI/CrossUI.Droid/Dialog/Enums/UIKeyboardType.cs
+#	new file:   CrossUI/CrossUI.Droid/Dialog/InternalStyleable.cs
+#	new file:   CrossUI/CrossUI.Droid/Dialog/LinearDialogActivity.cs
+#	new file:   CrossUI/CrossUI.Droid/Dialog/LinearDialogScrollView.cs
+#	modified:   CrossUI/CrossUI.Touch/Dialog/DialogViewController.cs
+#	modified:   CrossUI/CrossUI.Touch/Dialog/Elements/DateTimeElement.cs
+#	modified:   CrossUI/CrossUI.Touch/Dialog/Elements/Element.cs
+#	modified:   CrossUI/CrossUI.Touch/Dialog/Elements/EntryElement.cs
+#	modified:   CrossUI/CrossUI.Touch/Dialog/Elements/RootElement.cs
+#	modified:   CrossUI/CrossUI.Touch/Dialog/Elements/StyledStringElement.cs
+#	modified:   CrossUI/CrossUI.Touch/Dialog/Elements/TimeElement.cs
+#	modified:   MvvmCross_All.sln
+#	modified:   Plugins/Cirrious/Bookmarks/Cirrious.MvvmCross.Plugins.Bookmarks/Cirrious.MvvmCross.Plugins.Bookmarks.csproj
+#	modified:   Plugins/Cirrious/Color/Cirrious.MvvmCross.Plugins.Color.WindowsPhone/Cirrious.MvvmCross.Plugins.Color.WindowsPhone.csproj
+#	new file:   Plugins/Cirrious/Color/Cirrious.MvvmCross.Plugins.Color.WindowsPhone/MvxColorDesignTimeHelper.cs
+#	modified:   Plugins/Cirrious/Color/Cirrious.MvvmCross.Plugins.Color.WindowsStore/Cirrious.MvvmCross.Plugins.Color.WindowsStore.csproj
+#	new file:   Plugins/Cirrious/Color/Cirrious.MvvmCross.Plugins.Color.WindowsStore/MvxColorDesignTimeHelper.cs
+#	modified:   Plugins/Cirrious/Color/Cirrious.MvvmCross.Plugins.Color/Cirrious.MvvmCross.Plugins.Color.csproj
+#	new file:   Plugins/Cirrious/Color/Cirrious.MvvmCross.Plugins.Color/MvxRGBAValueConverter.cs
+#	modified:   Plugins/Cirrious/DownloadCache/Cirrious.MvvmCross.Plugins.DownloadCache/Cirrious.MvvmCross.Plugins.DownloadCache.csproj
+#	modified:   Plugins/Cirrious/Email/Cirrious.MvvmCross.Plugins.Email.Droid/MvxComposeEmailTask.cs
+#	modified:   Plugins/Cirrious/Email/Cirrious.MvvmCross.Plugins.Email/Cirrious.MvvmCross.Plugins.Email.csproj
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.FieldBinding/Cirrious.MvvmCross.FieldBinding.csproj
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.FieldBinding/INC.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.FieldBinding/INotifyChange.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.FieldBinding/NC.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.FieldBinding/NotifyChange.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.FieldBinding/Properties/AssemblyInfo.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding.csproj
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/MvxChainedFieldSourceBinding.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/MvxChainedNotifyChangeFieldSourceBinding.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/MvxFieldSourceBinding.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/MvxFieldSourceBindingFactoryExtension.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/MvxLeafFieldSourceBinding.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/MvxLeafNotifyChangeFieldSourceBinding.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/MvxNotifyChangeFieldSourceBinding.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/PluginLoader.cs
+#	new file:   Plugins/Cirrious/FieldBinding/Cirrious.MvvmCross.Plugins.FieldBinding/Properties/AssemblyInfo.cs
+#	modified:   Plugins/Cirrious/File/Cirrious.MvvmCross.Plugins.File/Cirrious.MvvmCross.Plugins.File.csproj
+#	modified:   Plugins/Cirrious/Json/Cirrious.MvvmCross.Plugins.Json/Cirrious.MvvmCross.Plugins.Json.csproj
+#	modified:   Plugins/Cirrious/JsonLocalisation/Cirrious.MvvmCross.Plugins.JsonLocalisation/Cirrious.MvvmCross.Plugins.JsonLocalisation.csproj
+#	modified:   Plugins/Cirrious/Location/Cirrious.MvvmCross.Plugins.Location/Cirrious.MvvmCross.Plugins.Location.csproj
+#	modified:   Plugins/Cirrious/Messenger/Cirrious.MvvmCross.Plugins.Messenger.Test/MessengerHubTest.cs
+#	modified:   Plugins/Cirrious/Messenger/Cirrious.MvvmCross.Plugins.Messenger/MvxMessengerHub.cs
+#	modified:   Plugins/Cirrious/Messenger/Cirrious.MvvmCross.Plugins.Messenger/MvxSubscriptionToken.cs
+#	new file:   Plugins/Cirrious/MethodBinding/Cirrious.MvvmCross.Plugins.MethodBinding/Cirrious.MvvmCross.Plugins.MethodBinding.csproj
+#	new file:   Plugins/Cirrious/MethodBinding/Cirrious.MvvmCross.Plugins.MethodBinding/MvxMethodSourceBinding.cs
+#	new file:   Plugins/Cirrious/MethodBinding/Cirrious.MvvmCross.Plugins.MethodBinding/MvxMethodSourceBindingFactoryExtension.cs
+#	new file:   Plugins/Cirrious/MethodBinding/Cirrious.MvvmCross.Plugins.MethodBinding/PluginLoader.cs
+#	new file:   Plugins/Cirrious/MethodBinding/Cirrious.MvvmCross.Plugins.MethodBinding/Properties/AssemblyInfo.cs
+#	modified:   Plugins/Cirrious/Network/Cirrious.MvvmCross.Plugins.Network.Droid/Resources/Resource.Designer.cs
+#	new file:   Plugins/Cirrious/Network/Cirrious.MvvmCross.Plugins.Network.Wpf/Cirrious.MvvmCross.Plugins.Network.Wpf.csproj
+#	new file:   Plugins/Cirrious/Network/Cirrious.MvvmCross.Plugins.Network.Wpf/Plugin.cs
+#	new file:   Plugins/Cirrious/Network/Cirrious.MvvmCross.Plugins.Network.Wpf/Properties/AssemblyInfo.cs
+#	modified:   Plugins/Cirrious/PhoneCall/Cirrious.MvvmCross.Plugins.PhoneCall/Cirrious.MvvmCross.Plugins.PhoneCall.csproj
+#	modified:   Plugins/Cirrious/PictureChooser/Cirrious.MvvmCross.Plugins.PictureChooser.Touch/MvxImagePickerTask.cs
+#	modified:   Plugins/Cirrious/PictureChooser/Cirrious.MvvmCross.Plugins.PictureChooser/Cirrious.MvvmCross.Plugins.PictureChooser.csproj
+#	modified:   Plugins/Cirrious/ReflectionEx/Cirrious.MvvmCross.Plugins.ReflectionEx.Droid/Resources/Resource.Designer.cs
+#	modified:   Plugins/Cirrious/ResourceLoader/Cirrious.MvvmCross.Plugins.ResourceLoader.WindowsStore/MvxStoreResourceLoader.cs
+#	modified:   Plugins/Cirrious/ResourceLoader/Cirrious.MvvmCross.Plugins.ResourceLoader/Cirrious.MvvmCross.Plugins.ResourceLoader.csproj
+#	modified:   Plugins/Cirrious/Share/Cirrious.MvvmCross.Plugins.Share/Cirrious.MvvmCross.Plugins.Share.csproj
+#	modified:   Plugins/Cirrious/SoundEffects/Cirrious.MvvmCross.Plugins.SoundEffects/Cirrious.MvvmCross.Plugins.SoundEffects.csproj
+#	modified:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite.Console/Cirrious.MvvmCross.Plugins.Sqlite.Console.csproj
+#	modified:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite.Console/MvxConsoleSQLiteConnectionFactory.cs
+#	new file:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite.Wpf/Cirrious.MvvmCross.Plugins.Sqlite.Wpf.csproj
+#	new file:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite.Wpf/MvxWpfSqLiteConnectionFactory.cs
+#	new file:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite.Wpf/Plugin.cs
+#	new file:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite.Wpf/Properties/AssemblyInfo.cs
+#	modified:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite/BaseClasses.cs
+#	modified:   Plugins/Cirrious/Sqlite/Cirrious.MvvmCross.Plugins.Sqlite/SharedFile/SQLiteNet.cs
+#	modified:   Plugins/Cirrious/Visibility/Cirrious.MvvmCross.Plugins.Visibility.WindowsPhone/Cirrious.MvvmCross.Plugins.Visibility.WindowsPhone.csproj
+#	new file:   Plugins/Cirrious/Visibility/Cirrious.MvvmCross.Plugins.Visibility.WindowsPhone/MvxVisibilityDesignTimeHelper.cs
+#	modified:   Plugins/Cirrious/Visibility/Cirrious.MvvmCross.Plugins.Visibility.WindowsPhone/MvxWindowsPhoneVisibility.cs
+#	modified:   Plugins/Cirrious/Visibility/Cirrious.MvvmCross.Plugins.Visibility.WindowsStore/Cirrious.MvvmCross.Plugins.Visibility.WindowsStore.csproj
+#	new file:   Plugins/Cirrious/Visibility/Cirrious.MvvmCross.Plugins.Visibility.WindowsStore/MvxVisibilityDesignTimeHelper.cs
+#	new file:   nuspec/BootstrapContent/FieldBindingPluginBootstrap.cs.pp
+#	new file:   nuspec/BootstrapContent/MethodBindingPluginBootstrap.cs.pp
+#	new file:   nuspec/DroidContent/DebugTrace.cs.pp
+#	modified:   nuspec/DroidContent/LinkerPleaseInclude.cs.pp
+#	modified:   nuspec/DroidContent/Setup.cs.pp
+#	modified:   nuspec/MvvmCross.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.BindingEx.3.0.1.nuspec
+#	new file:   nuspec/MvvmCross.HotTuna.AutoViews.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.CrossCore.3.0.1.nuspec
+#	new file:   nuspec/MvvmCross.HotTuna.Droid.AutoViews.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Droid.Dialog.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Droid.Fragging.3.0.1.nuspec
+#	new file:   nuspec/MvvmCross.HotTuna.MvvmCrossLibraries.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Accelerometer.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.All.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Bookmarks.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Color.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.DownloadCache.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Email.3.0.1.nuspec
+#	new file:   nuspec/MvvmCross.HotTuna.Plugin.FieldBinding.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.File.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Json.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.JsonLocalisation.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Location.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Messenger.3.0.1.nuspec
+#	new file:   nuspec/MvvmCross.HotTuna.Plugin.MethodBinding.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Network.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.PhoneCall.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.PictureChooser.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.ReflectionEx.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.ResourceLoader.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.SQLite.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Share.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.SoundEffects.3.0.1.nuspec
+#	new file:   nuspec/MvvmCross.HotTuna.Plugin.Sqlite.3.0.8.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.ThreadUtils.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.Visibility.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Plugin.WebBrowser.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.StarterPack.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Tests.3.0.1.nuspec
+#	new file:   nuspec/MvvmCross.HotTuna.Touch.AutoViews.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.HotTuna.Touch.Dialog.3.0.1.nuspec
+#	modified:   nuspec/MvvmCross.PortableSupport.3.0.1.nuspec
+#	new file:   nuspec/PhoneContent/DebugTrace.cs.pp
+#	modified:   nuspec/PhoneContent/Setup.cs.pp
+#	new file:   nuspec/StoreContent/DebugTrace.cs.pp
+#	modified:   nuspec/StoreContent/Setup.cs.pp
+#	new file:   nuspec/TouchBootstrapContent/FieldBindingPluginBootstrap.cs.pp
+#	new file:   nuspec/TouchBootstrapContent/MethodBindingPluginBootstrap.cs.pp
+#	new file:   nuspec/TouchContent/DebugTrace.cs.pp
+#	modified:   nuspec/TouchContent/LinkerPleaseInclude.cs.pp
+#	modified:   nuspec/TouchContent/Setup.cs.pp
+#	modified:   nuspec/WpfContent/App.Xaml.Mvx.cs.pp
+#	new file:   nuspec/WpfContent/DebugTrace.cs.pp
+#	modified:   nuspec/WpfContent/Setup.cs.pp
+#	modified:   nuspec/pack.bat
+#	modified:   nuspec/push.bat
+#	modified:   readme.md
+#
+

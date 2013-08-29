@@ -59,8 +59,26 @@ namespace CrossUI.Touch.Dialog.Elements
             get { return _caption; }
             set
             {
+                if (_caption == value)
+                    return;
                 _caption = value;
                 UpdateCaptionDisplay(CurrentAttachedCell);
+            }
+        }
+
+        private bool _visible = true;
+        /// <summary>
+        ///  Whether or not to display this element
+        /// </summary>
+        public bool Visible
+        {
+            get { return _visible; }
+            set
+            {
+                if (_visible == value)
+                    return;
+                _visible = value;
+                UpdateCellDisplay(CurrentAttachedCell);
             }
         }
 
@@ -78,6 +96,11 @@ namespace CrossUI.Touch.Dialog.Elements
         /// </summary>
         protected virtual void UpdateCellDisplay(UITableViewCell cell)
         {
+            if (cell == null)
+                return;
+#warning SL _ removed  || !Parent.Visible
+            // NOTE - SL removed  !Parent.Visible - it caused exception 
+            cell.Hidden = !Visible;
             UpdateCaptionDisplay(cell);
         }
 
