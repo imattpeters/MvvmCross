@@ -112,6 +112,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore.SilverLight\Cirrious.CrossCore.SilverLight.csproj">
+      <Project>{149e414f-67fc-4dd5-bec0-63a99710cc87}</Project>
+      <Name>Cirrious.CrossCore.SilverLight</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore\Cirrious.CrossCore.csproj">
       <Project>{cff6f25a-3c3b-44ee-a54c-2ed4aaff3adb}</Project>
       <Name>Cirrious.CrossCore</Name>
