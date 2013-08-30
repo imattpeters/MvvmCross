@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D242124-1287-4ACC-82A0-8871582964C4}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cirrious.MvvmCross.BindingEx.SilverLight</RootNamespace>
+    <AssemblyName>Cirrious.MvvmCross.BindingEx.SilverLight</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core">
+      <HintPath>$(TargetFrameworkDirectory)System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\Bi.n.d.cs">
+      <Link>Bi.n.d.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\Import.cs">
+      <Link>Import.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\IMvxBindingCreator.cs">
+      <Link>IMvxBindingCreator.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\IMvxWindowsAssemblyCache.cs">
+      <Link>IMvxWindowsAssemblyCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\La.n.g.cs">
+      <Link>La.n.g.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\MvxBindingCreator.cs">
+      <Link>MvxBindingCreator.cs</Link>
+    </Compile>
+    <Compile Include="..\cirrious.mvvmcross.bindingex.windowsphone\mvxbinding\MvxMvvmCrossBindingCreator.cs">
+      <Link>MvxBinding\MvxMvvmCrossBindingCreator.cs</Link>
+    </Compile>
+    <Compile Include="..\cirrious.mvvmcross.bindingex.windowsphone\mvxbinding\MvxWindowsTargetBindingFactoryRegistry.cs">
+      <Link>MvxBinding\MvxWindowsTargetBindingFactoryRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\cirrious.mvvmcross.bindingex.windowsphone\mvxbinding\target\MvxCollapsedTargetBinding.cs">
+      <Link>MvxBinding\Target\MvxCollapsedTargetBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\cirrious.mvvmcross.bindingex.windowsphone\mvxbinding\target\MvxDependencyPropertyTargetBinding.cs">
+      <Link>MvxBinding\Target\MvxDependencyPropertyTargetBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\cirrious.mvvmcross.bindingex.windowsphone\mvxbinding\target\MvxVisibleTargetBinding.cs">
+      <Link>MvxBinding\Target\MvxVisibleTargetBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\MvxDependencyPropertyExtensionMethods.cs">
+      <Link>MvxDependencyPropertyExtensionMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\MvxDesignTimeChecker.cs">
+      <Link>MvxDesignTimeChecker.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\MvxWindowsAssemblyCache.cs">
+      <Link>MvxWindowsAssemblyCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Cirrious.MvvmCross.BindingEx.WindowsPhone\MvxWindowsBindingBuilder.cs">
+      <Link>MvxWindowsBindingBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\cirrious.mvvmcross.bindingex.windowsphone\windowsbinding\MvxWindowsBindingCreator.cs">
+      <Link>WindowsBinding\MvxWindowsBindingCreator.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore.SilverLight\Cirrious.CrossCore.SilverLight.csproj">
+      <Project>{149e414f-67fc-4dd5-bec0-63a99710cc87}</Project>
+      <Name>Cirrious.CrossCore.SilverLight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore\Cirrious.CrossCore.csproj">
+      <Project>{cff6f25a-3c3b-44ee-a54c-2ed4aaff3adb}</Project>
+      <Name>Cirrious.CrossCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cirrious.MvvmCross.Binding\Cirrious.MvvmCross.Binding.csproj">
+      <Project>{64dcd397-9019-41e8-a928-e5f5c5df185b}</Project>
+      <Name>Cirrious.MvvmCross.Binding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cirrious.MvvmCross.Localization\Cirrious.MvvmCross.Localization.csproj">
+      <Project>{d89351c1-d48f-4ad0-a0b9-353a93425ab7}</Project>
+      <Name>Cirrious.MvvmCross.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cirrious.MvvmCross\Cirrious.MvvmCross.csproj">
+      <Project>{b6e27475-e7d0-448c-a5cc-5097dca1e2dd}</Project>
+      <Name>Cirrious.MvvmCross</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

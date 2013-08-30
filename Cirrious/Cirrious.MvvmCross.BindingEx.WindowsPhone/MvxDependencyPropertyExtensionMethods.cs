@@ -6,7 +6,7 @@
 // Project Lead - Stuart Lodge, @slodge, me@slodge.com
 
 using System;
-#if WINDOWS_PHONE || WINDOWS_WPF
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
@@ -21,10 +21,9 @@ using Windows.UI.Xaml;
 namespace Cirrious.MvvmCross.BindingEx.WindowsShared
 // ReSharper restore CheckNamespace
 {
-    public static class MvxDependencyPropertyExtensionMethods
-    {
-#if WINDOWS_PHONE || WINDOWS_WPF
-        public static TypeConverter TypeConverter(this Type type)
+    public static class MvxDependencyPropertyExtensionMethods {
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
+		public static TypeConverter TypeConverter(this Type type)
         {
             var typeConverter =
                 type.GetCustomAttributes(typeof(TypeConverterAttribute), true).FirstOrDefault() as

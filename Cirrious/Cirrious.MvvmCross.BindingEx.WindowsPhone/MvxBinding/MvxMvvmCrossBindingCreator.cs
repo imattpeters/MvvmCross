@@ -7,7 +7,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
-#if WINDOWS_PHONE || WINDOWS_WPF
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
 using System.Windows;
 using System.Windows.Data;
 #endif
@@ -56,9 +56,9 @@ namespace Cirrious.MvvmCross.BindingEx.WindowsShared.MvxBinding
             var newList = new List<IMvxUpdateableBinding>();
             attachedObject.SetValue(BindingsListProperty, newList);
 
-            // create a binding watcher for the list
-#if WINDOWS_PHONE || WINDOWS_WPF
-            var binding = new System.Windows.Data.Binding();
+			// create a binding watcher for the list
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
+			var binding = new System.Windows.Data.Binding();
 #endif
 #if NETFX_CORE
             var binding = new Windows.UI.Xaml.Data.Binding();

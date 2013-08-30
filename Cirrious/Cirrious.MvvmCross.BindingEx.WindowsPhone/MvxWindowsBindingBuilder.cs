@@ -6,7 +6,7 @@
 // Project Lead - Stuart Lodge, @slodge, me@slodge.com
 
 using System;
-#if WINDOWS_PHONE || WINDOWS_WPF
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
 using System.Windows;
 #endif
 using Cirrious.CrossCore;

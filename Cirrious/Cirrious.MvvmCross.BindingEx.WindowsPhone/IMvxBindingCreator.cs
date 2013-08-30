@@ -7,7 +7,7 @@
 
 using System;
 using System.Collections.Generic;
-#if WINDOWS_PHONE || WINDOWS_WPF
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
 using System.Windows;
 #endif
 using Cirrious.MvvmCross.Binding.Bindings;

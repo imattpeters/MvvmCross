@@ -6,11 +6,11 @@
 // Project Lead - Stuart Lodge, @slodge, me@slodge.com
 
 using System;
-#if WINDOWS_PHONE || WINDOWS_WPF
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
 using System.ComponentModel;
 #endif
 using System.Reflection;
-#if WINDOWS_PHONE || WINDOWS_WPF
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
 using System.Windows;
 using System.Windows.Media;
 #endif
@@ -31,8 +31,8 @@ namespace Cirrious.MvvmCross.BindingEx.WindowsShared.MvxBinding.Target
     {
         private readonly DependencyProperty _targetDependencyProperty;
         private readonly Type _actualPropertyType;
-#if WINDOWS_PHONE || WINDOWS_WPF
-        private readonly TypeConverter _typeConverter;
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
+		private readonly TypeConverter _typeConverter;
 #endif
 
         private bool _isUpdatingSource;
@@ -44,8 +44,8 @@ namespace Cirrious.MvvmCross.BindingEx.WindowsShared.MvxBinding.Target
         {
             _targetDependencyProperty = targetDependencyProperty;
             _actualPropertyType = actualPropertyType;
-#if WINDOWS_PHONE || WINDOWS_WPF
-            _typeConverter = _actualPropertyType.TypeConverter();
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
+			_typeConverter = _actualPropertyType.TypeConverter();
 #endif
             // if we return TwoWay for ImageSource then we end up in 
             // problems with WP7 not doing the auto-conversion
@@ -65,8 +65,8 @@ namespace Cirrious.MvvmCross.BindingEx.WindowsShared.MvxBinding.Target
             if (frameworkElement == null)
                 return;
 
-#if WINDOWS_PHONE || WINDOWS_WPF
-            var listenerBinding = new System.Windows.Data.Binding(targetName)
+#if WINDOWS_PHONE || WINDOWS_WPF || SILVERLIGHT
+			var listenerBinding = new System.Windows.Data.Binding(targetName)
                 {Source = frameworkElement};
 #endif
 #if NETFX_CORE
@@ -135,10 +135,9 @@ namespace Cirrious.MvvmCross.BindingEx.WindowsShared.MvxBinding.Target
             }
         }
 
-        protected virtual object MakeSafeValue(object value)
-        {
-#if WINDOWS_PHONE || WINDOWS_WPF
-            if (_actualPropertyType.IsInstanceOfType(value))
+        protected virtual object MakeSafeValue(object value) {
+#if WINDOWS_PHONE || WINDOWS_WPF  || SILVERLIGHT
+			if (_actualPropertyType.IsInstanceOfType(value))
                 return value;
 
             if (_typeConverter == null
