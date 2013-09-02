@@ -11,16 +11,28 @@ using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
 
 namespace Cirrious.MvvmCross.SilverLight.Views {
-	public class MvxSimpleSilverLightViewPresenter
-		: MvxSilverLightViewPresenter {
+	public class MvxSimpleSilverLightViewPresenter : MvxSilverLightViewPresenter {
 		private readonly ContentControl _contentControl;
 
 		public MvxSimpleSilverLightViewPresenter( ContentControl contentControl ) {
 			_contentControl = contentControl;
 		}
 
+		/// <summary>
+		/// this allows for an easy constructor in silverlight
+		/// new MvxSimpleSilverLightViewPresenter( Application.Current.RootVisual )
+		/// </summary>
+		/// <param name="rootVisual">suggested: Application.Current.RootVisual</param>
+		public MvxSimpleSilverLightViewPresenter( UIElement rootVisual ) {
+			_contentControl = new ContentControl();
+			rootVisual = _contentControl;
+		}
+
+		
 		public override void Present( FrameworkElement frameworkElement ) {
 			_contentControl.Content = frameworkElement;
 		}
+
+
 	}
 }
