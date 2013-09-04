@@ -33,7 +33,7 @@ namespace Cirrious.MvvmCross.SilverLight.Views {
 			: base() {
 
 			this.Loaded += ( s, e ) => {
-				if ( hasBeenShown ) {
+				if ( !hasBeenShown ) {
 					if ( Shown != null ) {
 						hasBeenShown = true; // this is here so that we will run it once after its set. and fail to run it if its set after the first time we're shown.
 						Shown.Invoke( e, e );
