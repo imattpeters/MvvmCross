@@ -15,22 +15,24 @@ namespace Cirrious.MvvmCross.SilverLight.Views {
 		private readonly ContentControl _contentControl;
 
 		public MvxSimpleSilverLightViewPresenter( ContentControl contentControl ) {
+			contentControl.VerticalContentAlignment = VerticalAlignment.Stretch;
+			contentControl.HorizontalContentAlignment = HorizontalAlignment.Stretch;
+
 			_contentControl = contentControl;
 		}
 
-		/// <summary>
-		/// this allows for an easy constructor in silverlight
-		/// new MvxSimpleSilverLightViewPresenter( Application.Current.RootVisual )
-		/// </summary>
-		/// <param name="rootVisual">suggested: Application.Current.RootVisual</param>
-		public MvxSimpleSilverLightViewPresenter( UIElement rootVisual ) {
-			_contentControl = new ContentControl();
-			rootVisual = _contentControl;
-		}
 
-		
+
 		public override void Present( FrameworkElement frameworkElement ) {
+			//System.Windows.Deployment.Current.Dispatcher.BeginInvoke( () => {
+
+			//frameworkElement.VerticalAlignment = VerticalAlignment.Stretch;
+			//frameworkElement.HorizontalAlignment = HorizontalAlignment.Stretch;
+
 			_contentControl.Content = frameworkElement;
+
+			//} );
+
 		}
 
 
