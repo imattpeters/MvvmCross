@@ -5,6 +5,7 @@
 // 
 // Project Lead - Stuart Lodge, @slodge, me@slodge.com
 
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using Cirrious.MvvmCross.ViewModels;
@@ -13,11 +14,17 @@ namespace Cirrious.MvvmCross.SilverLight.Views {
 	public class MvxSilverLightView : UserControl, IMvxSilverLightView {
 		private IMvxViewModel _viewModel;
 
+
+		public event EventHandler ViewModelChanged;
+
 		public virtual IMvxViewModel ViewModel {
 			get { return _viewModel; }
 			set {
 				_viewModel = value;
 				DataContext = value;
+
+				if ( ViewModelChanged != null )
+					ViewModelChanged.Invoke( this, EventArgs.Empty );
 			}
 		}
 
@@ -43,16 +50,4 @@ namespace Cirrious.MvvmCross.SilverLight.Views {
 
 		}
 	}
-
-	public class MvxSilverLightView<T> : MvxSilverLightView
-		where T : class, IMvxViewModel {
-
-		public MvxSilverLightView() : base() { }
-
-		public new T ViewModel {
-			get { return base.ViewModel as T; }
-			set { base.ViewModel = value; }
-		}
-	}
-
 }
