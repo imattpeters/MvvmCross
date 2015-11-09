@@ -6,12 +6,14 @@
 // Project Lead - Stuart Lodge, @slodge, me@slodge.com
 
 using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Markup;
 using Cirrious.MvvmCross.ViewModels;
 
 namespace Cirrious.MvvmCross.SilverLight.Views {
-	public class MvxSilverLightView : ContentControl, IMvxSilverLightView {
+	public class MvxSilverLightView : UserControl, IMvxSilverLightView {
 		private IMvxViewModel _viewModel;
 
 
@@ -38,6 +40,10 @@ namespace Cirrious.MvvmCross.SilverLight.Views {
 
 		public MvxSilverLightView()
 			: base() {
+
+			// HACK: need to do this because the binding stringformat uses EN-US if we don't.
+			this.Language = XmlLanguage.GetLanguage( Thread.CurrentThread.CurrentCulture.Name );
+
 			this.VerticalContentAlignment = VerticalAlignment.Stretch;
 			this.HorizontalContentAlignment = HorizontalAlignment.Stretch;
 
