@@ -12,29 +12,18 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace Cirrious.MvvmCross.SilverLight.Views {
 	public class MvxSimpleSilverLightViewPresenter : MvxSilverLightViewPresenter {
-		private readonly ContentControl _contentControl;
+		protected readonly ContentControl ContentControlInternal;
 
 		public MvxSimpleSilverLightViewPresenter( ContentControl contentControl ) {
 			contentControl.VerticalContentAlignment = VerticalAlignment.Stretch;
 			contentControl.HorizontalContentAlignment = HorizontalAlignment.Stretch;
 
-			_contentControl = contentControl;
+			ContentControlInternal = contentControl;
 		}
-
-
 
 		public override void Present( FrameworkElement frameworkElement ) {
-			//System.Windows.Deployment.Current.Dispatcher.BeginInvoke( () => {
-
-			//frameworkElement.VerticalAlignment = VerticalAlignment.Stretch;
-			//frameworkElement.HorizontalAlignment = HorizontalAlignment.Stretch;
-
-			_contentControl.Content = frameworkElement;
-
-			//} );
-
+			ContentControlInternal.Content = frameworkElement;
 		}
-
 
 	}
 }
