@@ -13,7 +13,7 @@ using System.Windows.Markup;
 using Cirrious.MvvmCross.ViewModels;
 
 namespace Cirrious.MvvmCross.SilverLight.Views {
-	public class MvxSilverLightView : UserControl, IMvxSilverLightView {
+	public class MvxSilverLightView : ContentControl, IMvxSilverLightView {
 		private IMvxViewModel _viewModel;
 
 
