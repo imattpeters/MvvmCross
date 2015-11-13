@@ -9,7 +9,7 @@ using System;
 using System.Diagnostics;
 using Cirrious.CrossCore.Platform;
 
-namespace Cirrious.MvvmCross.SilverLight.Platform {
+namespace Cirrious.MvvmCross.Silverlight.Platform {
 	public class MvxDebugTrace : IMvxTrace {
 		public void Trace( MvxTraceLevel level, string tag, Func<string> message ) {
 			Debug.WriteLine( tag + ":" + level + ":" + message() );

@@ -8,11 +8,11 @@
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
 
-namespace Cirrious.MvvmCross.Plugins.File.SilverLight {
+namespace Cirrious.MvvmCross.Plugins.File.Silverlight {
 	public class Plugin
 		: IMvxPlugin {
 		public void Load() {
-			Mvx.RegisterSingleton<IMvxFileStore>( new MvxSilverLightFileStore() );
+			Mvx.RegisterSingleton<IMvxFileStore>( new MvxSilverlightFileStore() );
 		}
 	}
 }

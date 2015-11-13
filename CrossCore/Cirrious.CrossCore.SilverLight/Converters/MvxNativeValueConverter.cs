@@ -10,7 +10,7 @@ using System.Globalization;
 using System.Windows.Data;
 using Cirrious.CrossCore.Converters;
 
-namespace Cirrious.CrossCore.SilverLight.Converters
+namespace Cirrious.CrossCore.Silverlight.Converters
 {
     public class MvxNativeValueConverter
         : IValueConverter

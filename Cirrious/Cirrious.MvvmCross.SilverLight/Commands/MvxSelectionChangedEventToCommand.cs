@@ -7,7 +7,7 @@
 
 using System.Windows.Controls;
 
-namespace Cirrious.MvvmCross.SilverLight.Commands {
+namespace Cirrious.MvvmCross.Silverlight.Commands {
 	public class MvxSelectionChangedEventToCommand : MvxWithArgsEventToCommand {
 		protected override object MapCommandParameter( object parameter ) {
 			var selectionChangedEventArgs = parameter as SelectionChangedEventArgs;

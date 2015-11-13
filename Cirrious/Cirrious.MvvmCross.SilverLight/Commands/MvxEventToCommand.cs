@@ -17,7 +17,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interactivity;
 
-namespace Cirrious.MvvmCross.SilverLight.Commands {
+namespace Cirrious.MvvmCross.Silverlight.Commands {
 	public class MvxEventToCommand : TriggerAction<DependencyObject> {
 		/// <summary>
 		/// Identifies the <see cref="CommandParameter" /> dependency property

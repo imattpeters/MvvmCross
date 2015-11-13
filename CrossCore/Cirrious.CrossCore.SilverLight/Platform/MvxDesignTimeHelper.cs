@@ -11,7 +11,7 @@ using Cirrious.CrossCore.IoC;
 using System;
 using System.Windows;
 
-namespace Cirrious.CrossCore.SilverLight.Platform {
+namespace Cirrious.CrossCore.Silverlight.Platform {
 	public abstract class MvxDesignTimeHelper {
 		protected MvxDesignTimeHelper() {
 			if ( !IsInDesignTime )

@@ -21,7 +21,7 @@ using Cirrious.CrossCore.WindowsPhone.Converters;
 using Cirrious.CrossCore.Wpf.Converters;
 #endif
 #if SILVERLIGHT
-using Cirrious.CrossCore.SilverLight.Converters;
+using Cirrious.CrossCore.Silverlight.Converters;
 #endif
 #if NETFX_CORE
 using Cirrious.CrossCore.WindowsStore.Converters;
