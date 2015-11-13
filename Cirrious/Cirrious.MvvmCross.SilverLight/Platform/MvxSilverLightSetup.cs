@@ -1,4 +1,4 @@
-// MvxSilverLightetup.cs
+// MvxSilverlightSetup.cs
 // (c) Copyright Cirrious Ltd. http://www.cirrious.com
 // MvvmCross is licensed using Microsoft Public License (Ms-PL)
 // Contributions and inspirations noted in readme.md and license.txt
@@ -11,15 +11,15 @@ using Cirrious.CrossCore;
 using Cirrious.CrossCore.Platform;
 using Cirrious.CrossCore.Plugins;
 using Cirrious.MvvmCross.Platform;
-using Cirrious.MvvmCross.SilverLight.Views;
+using Cirrious.MvvmCross.Silverlight.Views;
 using Cirrious.MvvmCross.Views;
 
-namespace Cirrious.MvvmCross.SilverLight.Platform {
-	public abstract class MvxSilverLightSetup : MvxSetup {
+namespace Cirrious.MvvmCross.Silverlight.Platform {
+	public abstract class MvxSilverlightSetup : MvxSetup {
 		private readonly Dispatcher _uiThreadDispatcher;
-		private readonly IMvxSilverLightViewPresenter _presenter;
+		private readonly IMvxSilverlightViewPresenter _presenter;
 
-		protected MvxSilverLightSetup( Dispatcher uiThreadDispatcher, IMvxSilverLightViewPresenter presenter ) {
+		protected MvxSilverlightSetup( Dispatcher uiThreadDispatcher, IMvxSilverlightViewPresenter presenter ) {
 			_uiThreadDispatcher = uiThreadDispatcher;
 			_presenter = presenter;
 		}
@@ -33,13 +33,13 @@ namespace Cirrious.MvvmCross.SilverLight.Platform {
 		}
 
 		private MvxViewsContainer CreateAndRegisterSimpleSilverLightViewContainer() {
-			var toReturn = new MvxSilverLightViewsContainer();
-			Mvx.RegisterSingleton<IMvxSimpleSilverLightViewLoader>( toReturn );
+			var toReturn = new MvxSilverlightViewsContainer();
+			Mvx.RegisterSingleton<IMvxSimpleSilverlightViewLoader>( toReturn );
 			return toReturn;
 		}
 
 		protected override IMvxViewDispatcher CreateViewDispatcher() {
-			return new MvxSilverLightViewDispatcher( _uiThreadDispatcher, _presenter );
+			return new MvxSilverlightViewDispatcher( _uiThreadDispatcher, _presenter );
 		}
 
 		protected override IMvxPluginManager CreatePluginManager() {
