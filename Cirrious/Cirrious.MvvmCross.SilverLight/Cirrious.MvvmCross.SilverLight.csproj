@@ -89,17 +89,17 @@
     <Compile Include="Converters\MvxNativeValueConverter.cs" />
     <Compile Include="Platform\MvxDebugTrace.cs" />
     <Compile Include="Platform\MvxSilverlightSetup.cs" />
-    <Compile Include="Platform\MvxSimpleSilverlightApplication1.cs" />
+    <Compile Include="Platform\MvxSimpleSilverlightApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\IMvxSimpleSilverlightViewLoader1.cs" />
-    <Compile Include="Views\IMvxSilverlightView1.cs" />
-    <Compile Include="Views\IMvxSilverlightViewPresenter1.cs" />
-    <Compile Include="Views\MvxSimpleSilverlightViewPresenter1.cs" />
-    <Compile Include="Views\MvxSilverlightUIThreadDispatcher1.cs" />
-    <Compile Include="Views\MvxSilverlightView1.cs" />
-    <Compile Include="Views\MvxSilverlightViewDispatcher1.cs" />
-    <Compile Include="Views\MvxSilverlightViewPresenter1.cs" />
-    <Compile Include="Views\MvxSilverlightViewsContainer1.cs" />
+    <Compile Include="Views\IMvxSimpleSilverlightViewLoader.cs" />
+    <Compile Include="Views\IMvxSilverlightView.cs" />
+    <Compile Include="Views\IMvxSilverlightViewPresenter.cs" />
+    <Compile Include="Views\MvxSimpleSilverlightViewPresenter.cs" />
+    <Compile Include="Views\MvxSilverlightUIThreadDispatcher.cs" />
+    <Compile Include="Views\MvxSilverlightView.cs" />
+    <Compile Include="Views\MvxSilverlightViewDispatcher.cs" />
+    <Compile Include="Views\MvxSilverlightViewPresenter.cs" />
+    <Compile Include="Views\MvxSilverlightViewsContainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
