@@ -41,7 +41,7 @@ namespace Cirrious.MvvmCross.ViewModels
         {
             var name = this.GetPropertyNameFromExpression(property);
             RaisePropertyChanged(name);
-        }
+		}
 
         public void RaisePropertyChanged(string whichProperty)
         {
