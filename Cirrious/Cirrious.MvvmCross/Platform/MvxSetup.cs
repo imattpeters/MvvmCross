@@ -48,7 +48,7 @@ namespace Cirrious.MvvmCross.Platform
             State = MvxSetupState.InitializedPrimary;
             if (State != MvxSetupState.InitializedPrimary)
             {
-                throw new MvxException("Cannot start seconday - as state is currently {0}", State);
+                throw new MvxException("Cannot start secondary - as state is currently {0}", State);
             }
             State = MvxSetupState.InitializingSecondary;
             MvxTrace.Trace("Setup: FirstChance start");
@@ -171,7 +171,7 @@ namespace Cirrious.MvvmCross.Platform
 
         protected virtual void InitializeFirstChance()
         {
-            // always the very first thing to get initialized - after IoC and base platfom 
+            // always the very first thing to get initialized - after IoC and base platform 
             // base class implementation is empty by default
         }
 
@@ -213,7 +213,7 @@ namespace Cirrious.MvvmCross.Platform
         }
 
         /*
-         * this code removed - as it just would't work on enough platforms :/
+         * this code removed - as it just wouldn't work on enough platforms :/
          * I blame Microsoft... not supporting GetReferencedAssembliesEx() on WP and WinRT
          * means that we can't really do nice automated plugin loading
         protected void TryAutoLoadPluginsByReflection()
