@@ -8,7 +8,10 @@
 using System;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using Cirrious.CrossCore;
 using Cirrious.CrossCore.Core;
+using Cirrious.CrossCore.Platform;
+using Sys;
 
 namespace Cirrious.MvvmCross.ViewModels
 {
@@ -62,7 +65,10 @@ namespace Cirrious.MvvmCross.ViewModels
                 == MvxInpcInterceptionResult.DoNotRaisePropertyChanged) 
                 return;
 
-            var raiseAction = new Action(() =>
+			//Mvx.Resolve<IMvxTrace>().Trace( MvxTraceLevel.Diagnostic, "", "RaisePropertyChanged: " + changedArgs.PropertyName );
+		
+
+			var raiseAction = new Action(() =>
                     {
                         var handler = PropertyChanged;
 

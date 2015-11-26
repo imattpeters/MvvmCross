@@ -118,6 +118,10 @@
     <Compile Include="Views\MvxViewsContainer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Sys\Core\Sys.Core.csproj">
+      <Project>{cb97cf00-b3fe-4c93-8b51-9236178f9e48}</Project>
+      <Name>Sys.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore\Cirrious.CrossCore.csproj">
       <Project>{CFF6F25A-3C3B-44EE-A54C-2ED4AAFF3ADB}</Project>
       <Name>Cirrious.CrossCore</Name>
