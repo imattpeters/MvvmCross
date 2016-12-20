@@ -9,7 +9,7 @@ using System;
 using System.IO;
 
 namespace Cirrious.MvvmCross.Plugins.File.Silverlight {
-	public class MvxSilverlightFileStore : MvxFileStore {
+	public class MvxSilverlightFileStore : MvxBaseFileStore {
 		protected override string FullPath( string path ) {
 			return Path.Combine( Environment.GetFolderPath( Environment.SpecialFolder.ApplicationData ), path );
 		}

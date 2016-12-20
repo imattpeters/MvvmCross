@@ -15,7 +15,7 @@ using Cirrious.CrossCore.Exceptions;
 using Cirrious.CrossCore.Platform;
 
 namespace Cirrious.MvvmCross.Plugins.File {
-	public abstract class MvxFileStore
+	public abstract class MvxBaseFileStore
 		: IMvxFileStore {
 		#region IMvxFileStore Members
 
